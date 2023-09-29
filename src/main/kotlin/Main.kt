@@ -69,11 +69,11 @@ fun feedTheFish() {
     val day = randomDay()
     val food = fishFood(day)
     println ("Today is $day and the fish eat $food")
-}
-
+}*/
+/*
 fun main(args: Array<String>) {
     feedTheFish()
-}*/
+
 
 // Call function feedTheFish
 feedTheFish()
@@ -82,4 +82,16 @@ feedTheFish()
 swim() // Default value used
 swim("slow") // Positional argument
 swim(speed = "turtle like") // Named Parameter
+}*/
+
+class Choice{
+    companion object{
+        var name: String = "lyric"
+        fun showDescription(name:String) = println("My favorite $name")
+    }
+}
+fun main(){
+    println(Choice.name)
+    Choice.showDescription("pick")
+    Choice.showDescription("selection")
 }
